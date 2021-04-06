@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="mydb?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.inatel.projeto.view.Distribuidora_1</class>
+    <class>br.inatel.projeto.model.Anime</class>
+    <class>br.inatel.projeto.model.Editora</class>
+    <class>br.inatel.projeto.model.Distribuidora</class>
+    <class>br.inatel.projeto.model.Studio</class>
+    <class>br.inatel.projeto.model.Manga</class>
+    <class>br.inatel.projeto.view.Editora</class>
+    <class>br.inatel.projeto.view.Editora_1</class>
+    <class>br.inatel.projeto.view.Editora_1_1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="vertrigo"/>
+    </properties>
+  </persistence-unit>
+</persistence>
